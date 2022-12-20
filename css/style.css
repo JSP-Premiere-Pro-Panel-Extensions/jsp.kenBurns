@@ -1,0 +1,24 @@
+@import 'jspPanelStyle.css';
+
+#control-area > *:not(:first-child):not(.drawer) {
+    margin-top: 4px;
+}
+
+.drawer {
+    display: grid;
+    grid-template-columns: auto 40%;
+}
+
+.drawer label {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.drawer .input[type=number] {
+    grid-column: 2;
+}
+
+.drawer button {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}

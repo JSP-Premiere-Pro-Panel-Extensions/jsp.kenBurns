@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<link rel="stylesheet" href="css/style.css">
+		<script src='js/lib/CSInterface.js'></script>
+		<script src='js/lib/json2.js'></script>
+	</head>
+	<body>
+		<div id='control-area'>
+			<button id='grow'>Grow</button>
+			<div id='grow-drawer' class='drawer'>
+				<label>
+					<input type='checkbox' id='grow-rate-checkbox' checked>
+					<div class='checkbox'></div>
+					Rate:
+				</label>
+				<input type='number' id='grow-rate' value='5' min='0'>
+				<label>
+					<input type='checkbox' id='grow-initial-checkbox' checked>
+					<div class='checkbox'></div>
+					Initial scale:
+				</label>
+				<input type='number' id='grow-initial' value='100' min='0' max='10000'>
+				<label>
+					<input type='checkbox' id='grow-final-checkbox'>
+					<div class='checkbox'></div>
+					Final scale:
+				</label>
+				<input type='number' id='grow-final' min='0' max='10000'>
+				<button type='submit' id='apply-grow'>
+					Apply grow
+				</button>
+			</div>
+			<button id='shrink'>Shrink</button>
+			<div id='shrink-drawer' class='drawer'>
+				<label>
+					<input type='checkbox' id='shrink-rate-checkbox' checked>
+					<div class='checkbox'></div>
+					Rate:
+				</label>
+				<input type='number' id='shrink-rate' value='5' min='0'>
+				<label>
+					<input type='checkbox' id='shrink-initial-checkbox'>
+					<div class='checkbox'></div>
+					Initial scale:
+				</label>
+				<input type='number' id='shrink-initial' min='0' max='10000'>
+				<label>
+					<input type='checkbox' id='shrink-final-checkbox' checked>
+					<div class='checkbox'></div>
+					Final scale:
+				</label>
+				<input type='number' id='shrink-final' value='100' min='0' max='10000'>
+				<button type='submit' id='apply-shrink'>
+					Apply shrink
+				</button>
+			</div>
+			<div id='void'></div>
+		</div>
+		<script src='js/jspPanelSupport.js'></script>
+		<script src='js/main.js'></script>
+	</body>
+</html>
