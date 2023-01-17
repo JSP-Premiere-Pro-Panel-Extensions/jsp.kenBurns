@@ -1,6 +1,7 @@
 JSP.assignDrawerToButton('grow-drawer','grow')
 JSP.assignDrawerToButton('shrink-drawer','shrink')
 JSP.makeDrawersExclusive(['grow-drawer','shrink-drawer'])
+JSP.setHelpURL('https://github.com/JSP-Premiere-Pro-Panel-Extensions/jsp.kenBurns/blob/main/README.md')
 
 // #apply-grow <button> click
 document.getElementById('apply-grow').addEventListener('click', () => {
