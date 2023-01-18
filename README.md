@@ -38,9 +38,5 @@ Access the panel extension by navigating through the Premiere menu at the top of
 
 
 
-### No compensation for "scale to frame size"
-
-
-
 ### Removes existing keyframes
 
