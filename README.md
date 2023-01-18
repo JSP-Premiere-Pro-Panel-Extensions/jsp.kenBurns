@@ -53,10 +53,10 @@ If you'd like a parameter to be used in the creation of the scale effect, check 
 If you'd like to ignore a parameter, uncheck.
 Parameters without a specified value are automatically ignored.
 
-- If all three parameters are checked, rate is ignored. 
-- If only rate is checked, an initial or final scale of 100% is assumed, depending on whether the user has requested a grow or shrink. 
-- If only initial or final scale is checked, a rate of 0 is assumed. 
-- If no parameters are checked, the scale effect defaults to a constant 100%.
+- If all three parameters are checked and specified, rate is ignored. 
+- If only rate is checked and specified, an initial or final scale of 100% is assumed, depending on whether the user has requested a grow or shrink. 
+- If only initial or final scale is checked and specified, a rate of 0 is assumed. 
+- If no parameters are checked and specified, the scale effect defaults to a constant 100%.
 
 In most cases, keyframes will be placed on the first and last frames of the clip. 
 However, if the maximum (10000%) or minimum (0%) scales are reached, a keyframe will be placed mid-clip.
